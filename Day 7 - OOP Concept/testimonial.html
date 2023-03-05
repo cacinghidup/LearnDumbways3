@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <!--Link Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/testimonial.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Batch 45</title>
+    </head>
+    <body>
+        <script src="assets/js/hamburger_menu.js"></script>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <div id="logo">
+                        <li>
+                            <a href="https://dumbways.id/">
+                                <img id="linkDumbways" src="assets/image/dumbwaysLogo.png" alt="dumbwaysLogo">
+                            </a>
+                        </li>
+                    </div>
+                    <div id="home">
+                        <a id="linkHome" href="index.html">
+                            <li>Home</li>
+                        </a>
+                    </div>
+                    <div id="project">
+                        <a id="projectDetail" href="my_project.html">
+                            <li>My Project</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a id="testimonial" href="testimonial.html">
+                            <li>My Testimonial</li>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="contact_form.html">
+                        <button type="button">
+                            Contact Me
+                        </button>
+                </a>
+                <!-- Hamburger Menu -->
+                <div class="hamburger-menu" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- Hamburger Item -->
+        <div id="targetHamburger" class="hamburger-menu-item">
+            <a id="hamLink" href="index.html">
+                <div class="hamburger-item">Home</div>
+            </a>
+            <a id="hamLink" href="my_project.html">
+                <div class="hamburger-item">My Project</div>
+            </a>
+            <a id="hamLink" href="contact_form.html">
+                <div class="hamburger-item">Contact Me</div>
+            </a>
+            <a id="hamLink" href="testimonial.html">
+                <div class="hamburger-item" style="background-color: orange;">My Testimonial</div>
+            </a>
+        </div> 
+
+        <!-- Body HTML -->
+        <div class="judulTesti">
+            <h1>My Testimonial</h1>
+        </div>
+        <div id="isiTesti" class="isiTesti">
+            <!-- <div class="detailTesti">
+                <img src="assets/image/istock.jpeg"/>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="author">Hadian</p>
+            </div> -->
+        </div>
+        <script src="assets/js/testimonial.js"></script>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/css/contact_form.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Contact Form</title>
+    </head>
+    <body class="contactMe">
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <div id="logo">
+                        <li>
+                            <a href="https://dumbways.id/">
+                                <img id="linkDumbways" src="assets/image/dumbwaysLogo.png" alt="dumbwaysLogo">
+                            </a>
+                        </li>
+                    </div>
+                    <div id="home">
+                        <a id="linkHome" href="index.html">
+                            <li>Home</li>
+                        </a>
+                    </div>
+                    <div id="project">
+                        <a style="text-decoration: none; color: black;" href="my_project.html">
+                            <li>My Project</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a id="testimonial" href="testimonial.html">
+                            <li>My Testimonial</li>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                        <button>Contact Me</button>
+            </div>
+            <!-- Hamburger Menu -->
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </div>            
+        </nav>
+        <!-- Hamburger Item -->
+         <div id="targetHamburger" class="hamburger-menu-item">
+            <a id="hamLink" href="index.html">
+                 <div class="hamburger-item">Home</div>
+            </a>
+            <a id="hamLink" href="my_project.html">
+                <div class="hamburger-item">My Project</div>
+            </a>
+            <a id="hamLink" href="contact_form.html">
+                <div class="hamburger-item" style="background-color: orange;">Contact Me</div>
+            </a>
+            <a id="hamLink" href="testimonial.html">
+                <div class="hamburger-item">My Testimonial</div>
+            </a>
+        </div>        
+        <div class="isiForm">
+            <div>
+                <h1>
+                    Get In Touch
+                </h1>
+            </div>
+            <div>
+                <form class="detailContactMe" autocomplete="off">
+                    <div>
+                        <label for="name">Name</label>
+                        <div>
+                            <input id="nama" type="text">
+                        </div>
+                    </div>
+        
+                    <div>
+                        <label for="email">Email</label>
+                        <div>
+                            <input id="email" type="text">
+                        </div>
+                    </div>
+        
+                    <div>
+                        <label for="number">Phone Number</label>
+                        <div>
+                            <input id="phoneNumber" type="tel"
+                            maxlength="13"
+                            minlength="10"
+                            >
+                        </div>
+                    </div>
+        
+                    <div>
+                        <label for="subject">Subject</label>
+                            <div>
+                                <select
+                                id="subject">
+                                <option hidden>None
+                                </option>
+                                <option >Collaboration</option>
+                                <option >Hiring</option>
+                                <option >Discussion</option>
+                                </select>
+                            </div>
+                    </div>
+        
+                    <div>
+                        <label for="yourMessage">Address</label>
+                              <div>
+                                  <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                              </div>  
+                    </div>
+                    
+                    <div class="buttonSubmit">
+                            <button type="button" onclick="getData()">
+                                Submit here
+                            </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <script src="assets/js/contact_form.js"></script>
+        <script src="assets/js/hamburger_menu.js"></script>
+    </body>
+</html>

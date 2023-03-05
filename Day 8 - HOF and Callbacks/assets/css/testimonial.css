@@ -1,0 +1,198 @@
+body{
+    background-color: rgb(228, 225, 225);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(245, 243, 243);
+    border-radius: 20px;
+}
+
+.nav-left{
+    flex: 50%;;
+}
+
+.nav-left ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 20px;
+}
+
+.nav-left ul div{
+    margin: 0px 15px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left #projectDetail,#testimonial {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left #linkHome{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left #testimonial {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-left #linkDumbways{
+    float: left;
+    width: 90px;
+    height: 65px;
+}
+
+
+.nav-right{
+    display: flex;
+    justify-content: flex-end;
+    flex: 50%;
+    align-items: center;
+}
+
+.nav-right button {
+    padding: 10px 20px;
+    margin: 0px 15px;
+    border-radius: 15px;
+    border-style: hidden;
+    box-shadow: 0px 0px 5px;
+    background-color: rgb(135, 135, 223);
+    cursor: pointer;
+}
+
+.nav-right button a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.hamburger-menu{
+    display: none;
+    margin: 0px 15px;
+}
+
+#targetHamburger {
+    margin: 10px 5px;
+}
+
+.hamburger-menu-item{
+    display: none;
+}
+
+#hamLink{
+    text-decoration: none;
+    color: black;
+}
+
+.hamburger-item {
+    display: flex;
+    background-color: rgb(208,207,207);
+    border: 1px solid white;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: large;
+    padding: 10px 15px;
+}
+
+.judulTesti h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.isiTesti {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.detailTesti {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    border: 1px black solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px;
+    width: 300px;
+    margin: 10px;
+    /* height: fit-content; */
+}
+
+.detailTesti img {
+    margin: 5px;
+    border-radius: 10px;
+    object-fit: fill;
+    height: 200px;
+}
+
+.detailTesti p {
+    margin: 10px;
+}
+
+.detailTesti .author{
+    text-align: right;
+    font-style: italic;
+}
+
+.rating {
+    text-align: right;
+    align-items: center;
+}
+
+#ratingScore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rating_button {
+    margin: 10px;
+    color: white;
+    background-color: orange;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+@media only screen and (max-width: 980px) {
+    .isiTesti {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Aturan CSS untuk layar dengan lebar maksimal 768 piksel */
+
+    .hamburger-menu {
+        display: flex;
+        cursor: pointer;
+    }
+
+    #home, #project,#testimonial, .nav-right a button {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 655px) {
+    .isiTesti {
+        grid-template-columns: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #ratingScore {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
